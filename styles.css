@@ -1,0 +1,44 @@
+/* Full-screen container with background */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('https://example.com/path/to/yellow-car-photo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/* Artistic button styling */
+#trickyButton {
+    position: absolute;
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+    background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 50%; /* Makes the button circular */
+    cursor: pointer;
+    z-index: 10;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    line-height: 100px; /* Centers text vertically */
+    overflow: hidden;
+    transition: transform 0.5s ease-out, background 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Button hover effect */
+#trickyButton:hover {
+    background: linear-gradient(135deg, #fad0c4 0%, #ff9a9e 100%);
+    transform: scale(1.05);
+}
